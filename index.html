@@ -22,20 +22,18 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800;900&family=Assistant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Assistant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="assets/styles.css?v=2">
-<link rel="stylesheet" href="assets/a11y.css?v=1">
+<link rel="stylesheet" href="assets/styles.css?v=4">
+<link rel="stylesheet" href="assets/a11y.css?v=2">
 <script src="assets/a11y.js?v=1"></script>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230A0B0D'/%3E%3Crect x='6' y='11' width='20' height='3' rx='1.5' fill='%23E1231D'/%3E%3Crect x='6' y='16' width='20' height='3' rx='1.5' fill='%23F2A93B'/%3E%3Crect x='6' y='21' width='20' height='3' rx='1.5' fill='%23245BFF'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230A0B0D'/%3E%3Crect x='6' y='11' width='20' height='3' rx='1.5' fill='%23E1231D'/%3E%3Crect x='6' y='16' width='20' height='3' rx='1.5' fill='%23245BFF'/%3E%3Crect x='6' y='21' width='20' height='3' rx='1.5' fill='%23F2A93B'/%3E%3C/svg%3E">
 
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"AutoDetailing",
+  "@context":"https://schema.org","@type":"AutoDetailing",
   "name":"Albertini Tuning — השחרת חלונות ושדרוגי רכב",
-  "image":"assets/img/hero-car.jpg",
-  "telephone":"+972543060327",
+  "image":"assets/img/hero-car.jpg","telephone":"+972543060327",
   "address":{"@type":"PostalAddress","streetAddress":"העמל 1","addressLocality":"אשדוד","addressCountry":"IL"},
   "geo":{"@type":"GeoCoordinates","latitude":31.8143295,"longitude":34.6696222},
   "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"26"},
@@ -85,9 +83,8 @@
       <span class="wm__txt">ALBERTINI<b>TUNING</b></span>
     </a>
     <nav class="nav__links" aria-label="ניווט ראשי">
-      <a href="#services">שירותים</a>
-      <a href="#tint">בחירת כהות</a>
-      <a href="#work">עבודות</a>
+      <a href="#work">מה עושים</a>
+      <a href="#gallery">עבודות</a>
       <a href="#place">איפה אנחנו</a>
     </nav>
     <a class="btn btn--ghost nav__cta" href="tel:+972543060327">054-306-0327</a>
@@ -97,9 +94,8 @@
 
 <div class="drawer" id="drawer" aria-hidden="true">
   <nav aria-label="ניווט נייד">
-    <a href="#services">שירותים</a>
-    <a href="#tint">בחירת כהות</a>
-    <a href="#work">עבודות</a>
+    <a href="#work">מה עושים</a>
+    <a href="#gallery">עבודות</a>
     <a href="#reviews">ביקורות</a>
     <a href="#place">איפה אנחנו</a>
   </nav>
@@ -113,26 +109,17 @@
     <div class="hero__bg" aria-hidden="true">
       <img src="assets/img/hero-car.jpg" alt="" id="heroImg" fetchpriority="high">
       <span class="hero__veil"></span>
-      <span class="hero__glow"></span>
     </div>
 
     <div class="shell hero__in">
-      <p class="hero__status" id="statusChip">
-        <span class="dot" id="statusDot"></span>
-        <span id="statusTxt">בודק שעות…</span>
-        <em id="statusHrs"></em>
-      </p>
-
       <h1 class="hero__h1">
-        <span class="ln"><i>הרכב שלך</i></span>
-        <span class="ln"><i>יוצא מכאן</i></span>
-        <span class="ln"><i><span class="grad">אחרת לגמרי.</span></i></span>
+        <span class="ln"><i>עבודה שרואים</i></span>
+        <span class="ln"><i>עליה מיד.</i></span>
       </h1>
 
       <p class="hero__lede">
-        השחרת חלונות, ציפוי פנסים, ג׳אנטים, פוליש וחידוש צבע —
-        לכל סוגי הרכב, וגם לבית ולעסק. עבודת יד מדויקת באשדוד,
-        עם יותר מחמש שנים של לקוחות חוזרים.
+        השחרת חלונות ושדרוגי רכב באשדוד. עבודת יד, בלי קיצורי דרך,
+        עם לקוחות שחוזרים כבר יותר מחמש שנים.
       </p>
 
       <div class="hero__acts">
@@ -140,21 +127,17 @@
           <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2z" fill="currentColor"/></svg>
           קבלו הצעת מחיר
         </a>
-        <a class="btn btn--ghost magnetic" href="#tint">איך זה ייראה על הרכב?</a>
+        <a class="btn btn--ghost magnetic" href="#work">מה עושים כאן</a>
       </div>
-
-      <dl class="hero__facts">
-        <div><dt>4.8</dt><dd>דירוג בגוגל · 26 ביקורות</dd></div>
-        <div><dt>5+</dt><dd>שנים של לקוחות חוזרים</dd></div>
-        <div><dt>10+</dt><dd>סוגי שדרוגים במקום אחד</dd></div>
-      </dl>
     </div>
+
+    <a class="hero__down" href="#work" aria-label="גללו למטה"><i aria-hidden="true"></i></a>
   </section>
 
   <!-- ===================== MARQUEE ===================== -->
   <div class="marq" aria-hidden="true">
     <div class="marq__track" id="marqTrack">
-      <span>השחרת חלונות רכב</span><i></i>
+      <span>השחרת חלונות</span><i></i>
       <span>ציפוי פנסים</span><i></i>
       <span>מגני רוח</span><i></i>
       <span>ג׳אנטים וקליפרים</span><i></i>
@@ -166,143 +149,99 @@
     </div>
   </div>
 
-  <!-- ===================== SERVICES ===================== -->
-  <section class="serv" id="services">
-    <div class="shell">
-      <div class="head">
-        <h2 class="h2">מה עושים כאן</h2>
-        <p class="lede">הכול תחת קורת גג אחת — מהשחרה קלאסית ועד שדרוגים שמשנים את האופי של הרכב.</p>
-      </div>
-
-      <div class="serv__grid">
-        <article class="sv sv--wide">
-          <div class="sv__img"><img src="assets/img/tint-apply.jpg" alt="הדבקת פילם השחרה על חלון רכב אדום" loading="lazy"></div>
-          <div class="sv__body">
-            <h3>השחרת חלונות</h3>
-            <p>לרכב, לבית ולעסק. פילם איכותי שמוריד חום וסינוור, שומר על הפרטיות ומגן על הריפוד מהשמש. חיתוך והדבקה מדויקים, בלי בועות ובלי קמטים.</p>
-            <span class="sv__tag">השירות המרכזי שלנו</span>
-          </div>
-        </article>
-
-        <article class="sv">
-          <div class="sv__img"><img src="assets/img/led.jpg" alt="פס לד אחורי מותקן על רכב קופרה" loading="lazy"></div>
-          <div class="sv__body"><h3>ציפוי פנסים ותאורה</h3><p>השחרת פנסים בגוונים שונים והתקנת תאורת LED — מראה חד ואגרסיבי, בלי לפגוע בעוצמת התאורה.</p></div>
-        </article>
-
-        <article class="sv">
-          <div class="sv__img"><img src="assets/img/wheel.jpg" alt="הגה רכב עם כיסוי עור תפור בעבודת יד" loading="lazy"></div>
-          <div class="sv__body"><h3>כיסוי הגה בתפירה</h3><p>עור נתפר על ההגה בעבודת יד, בהתאמה מדויקת לדגם — אחיזה נעימה ומראה של רכב יוקרה.</p></div>
-        </article>
-
-        <article class="sv">
-          <div class="sv__img"><img src="assets/img/interior.jpg" alt="פנים רכב עם ריפוד שחור ותפרים אדומים" loading="lazy"></div>
-          <div class="sv__body"><h3>פנים הרכב</h3><p>ריפודים, תפרים בצבע וגימורים פנימיים שמחדשים את תא הנוסעים מקצה לקצה.</p></div>
-        </article>
-
-        <article class="sv">
-          <div class="sv__img"><img src="assets/img/bmw.jpg" alt="רכב לאחר פוליש וחידוש צבע" loading="lazy"></div>
-          <div class="sv__body"><h3>פוליש, ווקס וחידוש צבע</h3><p>מסירים שריטות עדינות ומחזירים לצבע את העומק והברק — כולל דיטיילינג מלא לרכב.</p></div>
-        </article>
-
-        <article class="sv sv--list">
-          <div class="sv__body">
-            <h3>ועוד במקום</h3>
-            <ul class="chips">
-              <li>מגני רוח</li><li>ג׳אנטים</li><li>קליפרים</li>
-              <li>ציפוי גג פנורמי</li><li>דיטיילינג</li><li>אקססוריז לרכב</li>
-            </ul>
-            <a class="lnk" href="https://wa.me/972543060327" target="_blank" rel="noopener">לא בטוחים מה מתאים? שלחו הודעה <span aria-hidden="true">←</span></a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== TINT VISUALISER ===================== -->
-  <section class="tint" id="tint">
-    <div class="shell">
-      <div class="head head--center">
-        <h2 class="h2">כמה כהה זה יהיה?</h2>
-        <p class="lede">גררו את הבורר וראו איך כל רמת כהות נראית מבפנים. אצלנו בעסק נעבור איתכם על מה שמותר בחוק לכל חלון ברכב.</p>
-      </div>
-
-      <div class="tint__demo">
-        <div class="pane" id="pane">
-          <img src="assets/img/bmw.jpg" alt="נוף רחוב מואר — להמחשת רמות הכהות של הפילם" loading="lazy">
-          <span class="pane__film" id="paneFilm"></span>
-          <span class="pane__glare" aria-hidden="true"></span>
-          <span class="pane__seal" aria-hidden="true"></span>
-          <span class="pane__badge" id="paneBadge">70%</span>
-        </div>
-
-        <div class="tint__ui">
-          <div class="tint__read">
-            <span class="tint__num" id="vltNum">70</span><span class="tint__pct">% אור עובר</span>
-            <p class="tint__name" id="vltName">בהיר מאוד</p>
-            <p class="tint__desc" id="vltDesc">כמעט שקוף. מוריד סינוור קל ושומר על ראות מלאה בלילה.</p>
-          </div>
-
-          <label class="tint__slider">
-            <span class="vh">רמת כהות הפילם</span>
-            <input type="range" id="vlt" min="0" max="4" step="1" value="0"
-                   aria-valuetext="70 אחוז אור עובר — בהיר מאוד">
-          </label>
-          <div class="tint__ticks" aria-hidden="true">
-            <span>70%</span><span>50%</span><span>35%</span><span>20%</span><span>5%</span>
-          </div>
-
-          <p class="tint__note">התצוגה להמחשה בלבד — הגוון המדויק תלוי בזכוכית המקורית וברכב עצמו.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== WORK ===================== -->
+  <!-- ===================== WHAT WE DO — editorial rows ===================== -->
   <section class="work" id="work">
     <div class="shell">
-      <div class="head">
-        <h2 class="h2">עבודות מהמוסך</h2>
-        <p class="lede">צילומים אמיתיים מתוך העסק — בלי רכבי קטלוג.</p>
+      <h2 class="h2 work__title">מה עושים כאן</h2>
+    </div>
+
+    <article class="row">
+      <div class="row__media"><img src="assets/img/tinted-result.jpg" alt="חלון אחורי מושחר ברכב קופרה לאחר העבודה" loading="lazy"></div>
+      <div class="row__body">
+        <h3>השחרת חלונות</h3>
+        <p>
+          לרכב, לבית ולעסק. פילם שמוריד חום וסינוור, שומר על הפרטיות
+          ומגן על הריפוד מהשמש. חיתוך והדבקה מדויקים — בלי בועות, בלי קמטים,
+          ובלי הקצוות המתקלפים שרואים בעבודות זולות.
+        </p>
+        <p class="row__note">נעבור איתכם על מה שמותר בחוק לכל חלון ברכב לפני שמתחילים.</p>
       </div>
+    </article>
+
+    <article class="row row--flip">
+      <div class="row__media"><img src="assets/img/bmw.jpg" alt="רכב לאחר פוליש וחידוש צבע" loading="lazy"></div>
+      <div class="row__body">
+        <h3>פוליש, ווקס וחידוש צבע</h3>
+        <p>
+          מסירים שריטות עדינות והצהבה, מחזירים לצבע את העומק והברק
+          ואוטמים אותו בשכבת הגנה. רכב בן עשרים שנה יכול לצאת מכאן
+          נראה טוב יותר מרכב בן חמש.
+        </p>
+      </div>
+    </article>
+
+    <article class="row">
+      <div class="row__media"><img src="assets/img/interior.jpg" alt="פנים רכב עם ריפוד שחור ותפרים אדומים" loading="lazy"></div>
+      <div class="row__body">
+        <h3>פנים הרכב</h3>
+        <p>
+          ריפודים, תפרים בצבע וכיסוי הגה שנתפר בעבודת יד בהתאמה לדגם.
+          החלק שאתם נוגעים בו כל יום — הוא זה שמרגישים בו הכי מהר
+          שמשהו השתנה.
+        </p>
+      </div>
+    </article>
+
+    <div class="shell">
+      <div class="more">
+        <p class="more__t">ועוד במקום</p>
+        <ul class="chips">
+          <li>ציפוי פנסים</li><li>מגני רוח</li><li>ג׳אנטים</li><li>קליפרים</li>
+          <li>ציפוי גג פנורמי</li><li>טורבו LED</li><li>דיטיילינג</li><li>אקססוריז לרכב</li>
+        </ul>
+        <a class="lnk" href="https://wa.me/972543060327" target="_blank" rel="noopener">לא בטוחים מה מתאים? שלחו הודעה <span aria-hidden="true">←</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section class="gal" id="gallery">
+    <div class="shell gal__head">
+      <h2 class="h2">מהמוסך</h2>
+      <span class="gal__hint">גררו לצדדים</span>
     </div>
 
     <div class="rail" id="rail">
-      <figure class="shot"><img src="assets/img/hero-car.jpg" alt="אאודי בגוון ירוק מטאלי אחרי טיפול" loading="lazy"><figcaption>ליטוש וחידוש צבע</figcaption></figure>
-      <figure class="shot"><img src="assets/img/tint-apply.jpg" alt="הדבקת פילם השחרה בעבודת יד" loading="lazy"><figcaption>השחרת חלונות בתהליך</figcaption></figure>
-      <figure class="shot"><img src="assets/img/led.jpg" alt="פס תאורת לד אחורי" loading="lazy"><figcaption>תאורת LED אחורית</figcaption></figure>
+      <figure class="shot"><img src="assets/img/tint-apply.jpg" alt="הדבקת פילם השחרה בעבודת יד" loading="lazy"><figcaption>השחרה בתהליך</figcaption></figure>
+      <figure class="shot"><img src="assets/img/tinted-result.jpg" alt="חלון אחורי מושחר" loading="lazy"><figcaption>אחרי — חלון אחורי</figcaption></figure>
+      <figure class="shot"><img src="assets/img/hero-car.jpg" alt="אאודי בגוון ירוק מטאלי" loading="lazy"><figcaption>ליטוש וחידוש צבע</figcaption></figure>
       <figure class="shot"><img src="assets/img/wheel.jpg" alt="הגה עם עור תפור" loading="lazy"><figcaption>כיסוי הגה בתפירה</figcaption></figure>
       <figure class="shot"><img src="assets/img/interior.jpg" alt="ריפוד פנים עם תפרים אדומים" loading="lazy"><figcaption>ריפוד ותפרים</figcaption></figure>
       <figure class="shot"><img src="assets/img/bmw.jpg" alt="ב.מ.וו לבנה מחוץ למוסך" loading="lazy"><figcaption>קלאסי, אחרי טיפול</figcaption></figure>
       <figure class="shot"><img src="assets/img/workshop.jpg" alt="המוסך של אלברטיני טיונינג מבפנים" loading="lazy"><figcaption>המוסך שלנו</figcaption></figure>
     </div>
-
-    <div class="shell rail__hint"><span>גררו לצדדים לעוד עבודות</span></div>
   </section>
 
   <!-- ===================== REVIEWS ===================== -->
   <section class="rev" id="reviews">
     <div class="shell">
-      <div class="head head--split">
-        <h2 class="h2">מה הלקוחות אומרים</h2>
-        <div class="score">
-          <b>4.8</b>
-          <span class="stars" aria-label="דירוג 4.8 מתוך 5">★★★★★</span>
-          <em>26 ביקורות בגוגל</em>
-        </div>
+      <div class="rev__top">
+        <h2 class="h2">מה אומרים עלינו</h2>
+        <p class="rev__score"><b>4.8</b> <span class="stars" aria-label="דירוג 4.8 מתוך 5">★★★★★</span> <em>26 ביקורות בגוגל</em></p>
       </div>
 
       <div class="rev__grid">
         <figure class="q">
           <blockquote>שירות ועבודה מכל הלב. הגעתי לליטוש, השחרה של חלונות צד אחוריים והוצאת מגני רוח — אחזור ללא ספק לעוד דברים.</blockquote>
-          <figcaption><b>Or Avraham</b><span>ביקורת בגוגל</span></figcaption>
+          <figcaption>Or Avraham</figcaption>
         </figure>
         <figure class="q">
           <blockquote>כבר יותר מ־5 שנים לקוח שלו, קרוב ל־10 רכבים שהשחרתי אצלו ועוד הרבה אקססוריז. תמיד עוזר עם המחירים ונותן יחס אדיב ונעים. לדעתי מספר 1 בתחום.</blockquote>
-          <figcaption><b>אור מגידיש</b><span>ביקורת בגוגל</span></figcaption>
+          <figcaption>אור מגידיש</figcaption>
         </figure>
         <figure class="q">
           <blockquote>עבודה פיקס. הרכב משתנה לגמרי — שווה להגיע.</blockquote>
-          <figcaption><b>Dmytry Kulyk</b><span>ביקורת בגוגל</span></figcaption>
+          <figcaption>Dmytry Kulyk</figcaption>
         </figure>
       </div>
     </div>
@@ -311,30 +250,21 @@
   <!-- ===================== PLACE ===================== -->
   <section class="place" id="place">
     <div class="shell">
-      <div class="head">
-        <h2 class="h2">איפה אנחנו</h2>
-        <p class="lede">אזור התעשייה של אשדוד, חניה בשפע ממש בכניסה. אפשר לקפוץ בלי תיאום — אבל עדיף להתקשר לפני, כדי שנשמור לכם זמן.</p>
-      </div>
+      <h2 class="h2 place__title">איפה אנחנו</h2>
 
       <div class="place__grid">
         <div class="place__info">
-          <div class="card card--addr">
-            <h3>הכתובת</h3>
+          <div class="card">
             <p class="addr">העמל 1, אשדוד</p>
+            <p class="addr__sub">אזור התעשייה · חניה בשפע בכניסה</p>
             <div class="place__nav">
-              <a class="btn btn--fill" href="https://waze.com/ul?ll=31.8143295,34.6696222&navigate=yes" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 2a9 9 0 0 0-9 9c0 1.9.6 3.4 1.7 4.8.5.7.4 1.3.1 2-.2.5-.5 1-.5 1.4 0 .6.5 1 1.1 1 .6 0 1.2-.3 1.8-.6.6-.3 1.1-.4 1.7-.2 1.2.4 2.4.6 3.6.5 4.6-.2 8.5-3.9 8.5-8.9A9 9 0 0 0 12 2z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="9.3" cy="10" r="1.1" fill="currentColor"/><circle cx="14.7" cy="10" r="1.1" fill="currentColor"/><path d="M9.5 13.6a3.2 3.2 0 0 0 5 0" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-                ניווט בוויז
-              </a>
-              <a class="btn btn--ghost" href="https://www.google.com/maps/dir/?api=1&destination=31.8143295,34.6696222" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
-                Google Maps
-              </a>
+              <a class="btn btn--fill" href="https://waze.com/ul?ll=31.8143295,34.6696222&navigate=yes" target="_blank" rel="noopener">ניווט בוויז</a>
+              <a class="btn btn--ghost" href="https://www.google.com/maps/dir/?api=1&destination=31.8143295,34.6696222" target="_blank" rel="noopener">Google Maps</a>
             </div>
           </div>
 
-          <div class="card card--hours">
-            <h3>שעות פתיחה</h3>
+          <div class="card">
+            <h3 class="card__t">שעות פתיחה</h3>
             <ul class="hrs" id="hrs">
               <li data-day="0"><span>ראשון</span><b>09:00–22:00</b></li>
               <li data-day="1"><span>שני</span><b>09:00–22:00</b></li>
@@ -346,20 +276,11 @@
             </ul>
           </div>
 
-          <div class="card card--call">
-            <h3>יצירת קשר</h3>
-            <a class="row" href="tel:+972543060327">
-              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 3h3l1.5 4-2 1.4a12 12 0 0 0 5.5 5.5l1.4-2 4 1.5v3a2 2 0 0 1-2.2 2A16.9 16.9 0 0 1 4.6 5.2 2 2 0 0 1 6.6 3z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
-              054-306-0327
-            </a>
-            <a class="row" href="https://wa.me/972543060327" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2z" fill="currentColor"/></svg>
-              וואטסאפ
-            </a>
-            <a class="row" href="https://www.instagram.com/albertinituning/" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="3.8" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
-              @albertinituning
-            </a>
+          <div class="card">
+            <h3 class="card__t">יצירת קשר</h3>
+            <a class="row-link" href="tel:+972543060327">054-306-0327</a>
+            <a class="row-link" href="https://wa.me/972543060327" target="_blank" rel="noopener">וואטסאפ</a>
+            <a class="row-link" href="https://www.instagram.com/albertinituning/" target="_blank" rel="noopener">אינסטגרם</a>
           </div>
         </div>
 
@@ -376,7 +297,7 @@
   <!-- ===================== CTA ===================== -->
   <section class="cta" id="contact">
     <div class="shell cta__in">
-      <h2 class="cta__h"><span class="ln"><i>מוכנים לשדרג?</i></span></h2>
+      <h2 class="cta__h"><span class="ln"><i>נשמע טוב?</i></span></h2>
       <p>שלחו הודעה עם דגם הרכב ומה בא לכם לעשות — נחזור אליכם עם מחיר וזמן עבודה.</p>
       <a class="btn btn--fill btn--lg magnetic" href="https://wa.me/972543060327?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2z" fill="currentColor"/></svg>
@@ -397,10 +318,9 @@
       <p>השחרת חלונות ושדרוגי רכב · העמל 1, אשדוד</p>
     </div>
     <div class="foot__col">
-      <h3>ניווט</h3>
-      <a href="#services">שירותים</a>
-      <a href="#tint">בחירת כהות</a>
-      <a href="#work">עבודות</a>
+      <h3>באתר</h3>
+      <a href="#work">מה עושים</a>
+      <a href="#gallery">עבודות</a>
       <a href="#place">איפה אנחנו</a>
     </div>
     <div class="foot__col">
@@ -428,6 +348,6 @@
   קבלו הצעת מחיר
 </a>
 
-<script src="assets/app.js?v=1"></script>
+<script src="assets/app.js?v=2"></script>
 </body>
 </html>
