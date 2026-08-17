@@ -144,11 +144,76 @@
   function initMarquee() {
     var track = document.getElementById('marqTrack');
     if (!track) return;
-    var gap = parseFloat(getComputedStyle(track).columnGap) || 0;
-    var dist = track.scrollWidth + gap;       // measure ONE set BEFORE duplicating
-    track.innerHTML += track.innerHTML;       // duplicate the items, not the track
-    track.style.setProperty('--marq-d', dist + 'px');
+
+    var setCount = track.children.length;
+    var html = track.innerHTML;
+
+    // Repeat until two full sets comfortably exceed the viewport, otherwise a
+    // wide screen runs out of content mid-cycle and the strip goes blank.
+    var copies = 2;
+    track.innerHTML = html + html;
+    while (track.scrollWidth < window.innerWidth * 2 && copies < 6) {
+      track.innerHTML += html;
+      copies++;
+    }
+
+    // Measure the real distance between the start of copy 1 and copy 2 rather
+    // than trusting scrollWidth — rounding across many items drifts, and any
+    // drift shows up as a visible jump every cycle.
+    function measure() {
+      var a = track.children[0].getBoundingClientRect().left;
+      var b = track.children[setCount].getBoundingClientRect().left;
+      var dist = Math.abs(b - a);
+      if (dist > 0) track.style.setProperty('--marq-d', dist + 'px');
+    }
+    measure();
+    addEventListener('resize', measure);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(measure);
+
     if (reduce) track.style.animation = 'none';
+  }
+
+  /* ---------- before / after: dragged by hand ---------- */
+  function initBA() {
+    var stage = document.getElementById('baStage');
+    if (!stage) return;
+
+    var p = 0.5;
+    function set(v) {
+      p = v < 0 ? 0 : v > 1 ? 1 : v;
+      stage.style.setProperty('--p', p.toFixed(4));
+      stage.setAttribute('aria-valuenow', Math.round(p * 100));
+    }
+    // RTL: the divider travels from the right edge leftwards, so p is measured
+    // from the right — dragging left uncovers the "after" frame.
+    function fromEvent(e) {
+      var r = stage.getBoundingClientRect();
+      set((r.right - e.clientX) / r.width);
+    }
+
+    var down = false;
+    stage.addEventListener('pointerdown', function (e) {
+      down = true;
+      stage.classList.add('is-drag');
+      try { stage.setPointerCapture(e.pointerId); } catch (err) {}
+      fromEvent(e);
+      e.preventDefault();
+    });
+    stage.addEventListener('pointermove', function (e) { if (down) fromEvent(e); });
+    ['pointerup', 'pointercancel', 'pointerleave'].forEach(function (ev) {
+      stage.addEventListener(ev, function () { down = false; stage.classList.remove('is-drag'); });
+    });
+
+    // keyboard equivalent so the comparison isn't mouse-only
+    stage.addEventListener('keydown', function (e) {
+      var step = e.shiftKey ? 0.12 : 0.05;
+      if (e.key === 'ArrowLeft') { set(p + step); e.preventDefault(); }
+      else if (e.key === 'ArrowRight') { set(p - step); e.preventDefault(); }
+      else if (e.key === 'Home') { set(0); e.preventDefault(); }
+      else if (e.key === 'End') { set(1); e.preventDefault(); }
+    });
+
+    set(0.5);
   }
 
   /* ---------- opening hours: highlight today ---------- */
@@ -209,7 +274,7 @@
     var y = document.getElementById('yr');
     if (y) y.textContent = new Date().getFullYear();
     initLoader(); initChrome(); initHero(); initParallax();
-    initMarquee(); initReveals(); initHours(); initRail();
+    initMarquee(); initReveals(); initBA(); initHours(); initRail();
     initMagnetic(); initAnchors();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);

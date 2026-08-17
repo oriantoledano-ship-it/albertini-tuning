@@ -10,7 +10,7 @@
 <script src="assets/framebust.js?v=1"></script>
 
 <title>Albertini Tuning · השחרת חלונות ושדרוגי רכב באשדוד</title>
-<meta name="description" content="אלברטיני טיונינג — השחרת חלונות לרכב, לבית ולעסק, ציפוי פנסים, מגני רוח, ג׳אנטים, פוליש וחידוש צבע. העמל 1 אשדוד. 4.8 כוכבים בגוגל.">
+<meta name="description" content="אלברטיני טיונינג - השחרת חלונות לרכב, לבית ולעסק, ציפוי פנסים, מגני רוח, ג׳אנטים, פוליש וחידוש צבע. העמל 1 אשדוד. 4.8 כוכבים בגוגל.">
 <meta name="theme-color" content="#0A0B0D">
 
 <meta property="og:type" content="website">
@@ -18,13 +18,13 @@
 <meta property="og:site_name" content="Albertini Tuning">
 <meta property="og:title" content="Albertini Tuning · השחרת חלונות ושדרוגי רכב באשדוד">
 <meta property="og:description" content="השחרת חלונות, ציפוי פנסים, דיטיילינג ושדרוגים לכל סוגי הרכב. אשדוד.">
-<meta property="og:image" content="assets/img/hero-car.jpg">
+<meta property="og:image" content="assets/img/hero-merc.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Assistant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Secular+One&family=Assistant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="assets/styles.css?v=4">
+<link rel="stylesheet" href="assets/styles.css?v=11">
 <link rel="stylesheet" href="assets/a11y.css?v=2">
 <script src="assets/a11y.js?v=1"></script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230A0B0D'/%3E%3Crect x='6' y='11' width='20' height='3' rx='1.5' fill='%23E1231D'/%3E%3Crect x='6' y='16' width='20' height='3' rx='1.5' fill='%23245BFF'/%3E%3Crect x='6' y='21' width='20' height='3' rx='1.5' fill='%23F2A93B'/%3E%3C/svg%3E">
@@ -32,8 +32,8 @@
 <script type="application/ld+json">
 {
   "@context":"https://schema.org","@type":"AutoDetailing",
-  "name":"Albertini Tuning — השחרת חלונות ושדרוגי רכב",
-  "image":"assets/img/hero-car.jpg","telephone":"+972543060327",
+  "name":"Albertini Tuning - השחרת חלונות ושדרוגי רכב",
+  "image":"assets/img/hero-merc.jpg","telephone":"+972543060327",
   "address":{"@type":"PostalAddress","streetAddress":"העמל 1","addressLocality":"אשדוד","addressCountry":"IL"},
   "geo":{"@type":"GeoCoordinates","latitude":31.8143295,"longitude":34.6696222},
   "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"26"},
@@ -55,7 +55,21 @@
       <span class="wm__bars" aria-hidden="true"><i></i><i></i><i></i></span>
       <span class="wm__txt">ALBERTINI<b>TUNING</b></span>
     </span>
-    <span class="ldr__bar"><i></i></span>
+    <span class="wheel" aria-hidden="true">
+      <svg viewBox="0 0 100 100" width="104" height="104">
+        <circle class="wheel__tire" cx="50" cy="50" r="43"/>
+        <g class="wheel__spin">
+          <circle class="wheel__arc wheel__arc--red"  cx="50" cy="50" r="43"/>
+          <circle class="wheel__arc wheel__arc--blue" cx="50" cy="50" r="43"/>
+          <circle class="wheel__arc wheel__arc--gold" cx="50" cy="50" r="43"/>
+          <g class="wheel__rim">
+            <circle cx="50" cy="50" r="26"/>
+            <path d="M50 26V74M26.2 38L73.8 62M26.2 62L73.8 38"/>
+          </g>
+        </g>
+        <circle class="wheel__hub" cx="50" cy="50" r="6.5"/>
+      </svg>
+    </span>
   </div>
 </div>
 
@@ -78,7 +92,7 @@
 <!-- ===== Nav ===== -->
 <header class="nav" id="nav">
   <div class="shell nav__in">
-    <a class="wm" href="#top" aria-label="Albertini Tuning — לראש העמוד">
+    <a class="wm" href="#top" aria-label="Albertini Tuning - לראש העמוד">
       <span class="wm__bars" aria-hidden="true"><i></i><i></i><i></i></span>
       <span class="wm__txt">ALBERTINI<b>TUNING</b></span>
     </a>
@@ -107,7 +121,7 @@
   <!-- ===================== HERO ===================== -->
   <section class="hero" id="top">
     <div class="hero__bg" aria-hidden="true">
-      <img src="assets/img/hero-car.jpg" alt="" id="heroImg" fetchpriority="high">
+      <img src="assets/img/hero-merc.jpg" alt="" id="heroImg" fetchpriority="high">
       <span class="hero__veil"></span>
     </div>
 
@@ -127,7 +141,7 @@
           <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2z" fill="currentColor"/></svg>
           קבלו הצעת מחיר
         </a>
-        <a class="btn btn--ghost magnetic" href="#work">מה עושים כאן</a>
+        <a class="btn btn--ghost magnetic" href="#work">מה עושים אצלנו</a>
       </div>
     </div>
 
@@ -149,19 +163,19 @@
     </div>
   </div>
 
-  <!-- ===================== WHAT WE DO — editorial rows ===================== -->
+  <!-- ===================== WHAT WE DO - editorial rows ===================== -->
   <section class="work" id="work">
     <div class="shell">
-      <h2 class="h2 work__title">מה עושים כאן</h2>
+      <h2 class="h2 work__title">מה עושים אצלנו</h2>
     </div>
 
     <article class="row">
-      <div class="row__media"><img src="assets/img/tinted-result.jpg" alt="חלון אחורי מושחר ברכב קופרה לאחר העבודה" loading="lazy"></div>
+      <div class="row__media"><img src="assets/img/tint-audi.jpg" alt="אאודי RS3 לבנה עם חלונות מושחרים לאחר העבודה" loading="lazy"></div>
       <div class="row__body">
         <h3>השחרת חלונות</h3>
         <p>
           לרכב, לבית ולעסק. פילם שמוריד חום וסינוור, שומר על הפרטיות
-          ומגן על הריפוד מהשמש. חיתוך והדבקה מדויקים — בלי בועות, בלי קמטים,
+          ומגן על הריפוד מהשמש. חיתוך והדבקה מדויקים - בלי בועות, בלי קמטים,
           ובלי הקצוות המתקלפים שרואים בעבודות זולות.
         </p>
         <p class="row__note">נעבור איתכם על מה שמותר בחוק לכל חלון ברכב לפני שמתחילים.</p>
@@ -169,7 +183,7 @@
     </article>
 
     <article class="row row--flip">
-      <div class="row__media"><img src="assets/img/bmw.jpg" alt="רכב לאחר פוליש וחידוש צבע" loading="lazy"></div>
+      <div class="row__media"><img src="assets/img/polish-bmw.jpg" alt="BMW X5 שחורה אחרי פוליש וחידוש צבע במוסך" loading="lazy"></div>
       <div class="row__body">
         <h3>פוליש, ווקס וחידוש צבע</h3>
         <p>
@@ -181,13 +195,24 @@
     </article>
 
     <article class="row">
-      <div class="row__media"><img src="assets/img/interior.jpg" alt="פנים רכב עם ריפוד שחור ותפרים אדומים" loading="lazy"></div>
+      <div class="row__media"><img src="assets/img/interior-wheel.jpg" alt="הגה עם כיסוי תפור בשילוב אלקנטרה וקרבון" loading="lazy"></div>
       <div class="row__body">
         <h3>פנים הרכב</h3>
         <p>
-          ריפודים, תפרים בצבע וכיסוי הגה שנתפר בעבודת יד בהתאמה לדגם.
-          החלק שאתם נוגעים בו כל יום — הוא זה שמרגישים בו הכי מהר
-          שמשהו השתנה.
+          כיסוי הגה בתפירה בשילוב אלקנטרה וקרבון, נתפר בעבודת יד בהתאמה לדגם.
+          לצד ריפודים ותפרים בצבע - החלק שאתם נוגעים בו כל יום הוא זה
+          שמרגישים בו הכי מהר שמשהו השתנה.
+        </p>
+      </div>
+    </article>
+
+    <article class="row row--flip">
+      <div class="row__media"><img src="assets/img/seats-cream.jpg" alt="ריפוד מושבים בעור בז׳ ושחור עם תפירה מיוחלת" loading="lazy"></div>
+      <div class="row__body">
+        <h3>ריפוד ותפרים</h3>
+        <p>
+          ריפוד מושבים בעור איכותי, בכל שילוב צבעים שתרצו, עם תפירה
+          מיוחלת ופרטים בעבודת יד. תא נוסעים שנראה ומרגיש כמו רכב אחר.
         </p>
       </div>
     </article>
@@ -207,18 +232,39 @@
   <!-- ===================== GALLERY ===================== -->
   <section class="gal" id="gallery">
     <div class="shell gal__head">
-      <h2 class="h2">מהמוסך</h2>
+      <h2 class="h2">מהמוסך שלנו</h2>
       <span class="gal__hint">גררו לצדדים</span>
     </div>
 
     <div class="rail" id="rail">
-      <figure class="shot"><img src="assets/img/tint-apply.jpg" alt="הדבקת פילם השחרה בעבודת יד" loading="lazy"><figcaption>השחרה בתהליך</figcaption></figure>
-      <figure class="shot"><img src="assets/img/tinted-result.jpg" alt="חלון אחורי מושחר" loading="lazy"><figcaption>אחרי — חלון אחורי</figcaption></figure>
-      <figure class="shot"><img src="assets/img/hero-car.jpg" alt="אאודי בגוון ירוק מטאלי" loading="lazy"><figcaption>ליטוש וחידוש צבע</figcaption></figure>
-      <figure class="shot"><img src="assets/img/wheel.jpg" alt="הגה עם עור תפור" loading="lazy"><figcaption>כיסוי הגה בתפירה</figcaption></figure>
-      <figure class="shot"><img src="assets/img/interior.jpg" alt="ריפוד פנים עם תפרים אדומים" loading="lazy"><figcaption>ריפוד ותפרים</figcaption></figure>
-      <figure class="shot"><img src="assets/img/bmw.jpg" alt="ב.מ.וו לבנה מחוץ למוסך" loading="lazy"><figcaption>קלאסי, אחרי טיפול</figcaption></figure>
-      <figure class="shot"><img src="assets/img/workshop.jpg" alt="המוסך של אלברטיני טיונינג מבפנים" loading="lazy"><figcaption>המוסך שלנו</figcaption></figure>
+      <figure class="shot"><img src="assets/img/g-tinted-mazda.jpg" alt="מאזדה 3 לבנה עם חלונות מושחרים במוסך" loading="lazy"><figcaption>אחרי - חלון אחורי</figcaption></figure>
+      <figure class="shot"><img src="assets/img/g-caliper.jpg" alt="קליפר בלמים בצבע ירוק זרחני לאחר צביעה" loading="lazy"><figcaption>צביעת קליפרים</figcaption></figure>
+      <figure class="shot"><img src="assets/img/g-polish.jpg" alt="רכב כסוף אחרי ליטוש וחידוש צבע במוסך" loading="lazy"><figcaption>ליטוש וחידוש צבע</figcaption></figure>
+      <figure class="shot"><img src="assets/img/g-wheel-honda.jpg" alt="הגה הונדה עם כיסוי קרבון ותפר אדום" loading="lazy"><figcaption>כיסוי הגה בתפירה</figcaption></figure>
+      <figure class="shot"><img src="assets/img/g-seats.jpg" alt="ריפוד מושבים שחור עם תפרים וקווים צהובים" loading="lazy"><figcaption>ריפוד ותפרים</figcaption></figure>
+      <figure class="shot"><img src="assets/img/g-lancer.jpg" alt="מיצובישי לנסר אפורה בתאורת לילה" loading="lazy"><figcaption>קלאסי, אחרי טיפול</figcaption></figure>
+    </div>
+  </section>
+
+
+  <!-- ===================== BEFORE / AFTER ===================== -->
+  <section class="ba" id="ba">
+    <div class="shell">
+      <h2 class="h2 ba__title">לפני ואחרי</h2>
+      <p class="ba__lede">הגה יונדאי שהגיע קרוע ומתפורר - ויצא עטוף בקרבון ואלקנטרה עם תפר צהוב.</p>
+    </div>
+
+    <div class="shell">
+      <div class="ba__stage" id="baStage" role="slider" tabindex="0"
+           aria-label="השוואה בין לפני לאחרי - גררו או השתמשו בחיצים"
+           aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+        <img class="ba__img ba__img--after" src="assets/img/ba-after.jpg" alt="ההגה אחרי כיסוי בתפירה - קרבון, אלקנטרה ותפר צהוב" loading="lazy">
+        <img class="ba__img ba__img--before" id="baBefore" src="assets/img/ba-before.jpg" alt="ההגה לפני - ציפוי קרוע ומתפורר" loading="lazy">
+        <span class="ba__line" aria-hidden="true"><i></i></span>
+        <span class="ba__tag ba__tag--b">לפני</span>
+        <span class="ba__tag ba__tag--a">אחרי</span>
+      </div>
+      <p class="ba__hint">גררו את הידית כדי להשוות</p>
     </div>
   </section>
 
@@ -232,7 +278,7 @@
 
       <div class="rev__grid">
         <figure class="q">
-          <blockquote>שירות ועבודה מכל הלב. הגעתי לליטוש, השחרה של חלונות צד אחוריים והוצאת מגני רוח — אחזור ללא ספק לעוד דברים.</blockquote>
+          <blockquote>שירות ועבודה מכל הלב. הגעתי לליטוש, השחרה של חלונות צד אחוריים והוצאת מגני רוח - אחזור ללא ספק לעוד דברים.</blockquote>
           <figcaption>Or Avraham</figcaption>
         </figure>
         <figure class="q">
@@ -240,7 +286,7 @@
           <figcaption>אור מגידיש</figcaption>
         </figure>
         <figure class="q">
-          <blockquote>עבודה פיקס. הרכב משתנה לגמרי — שווה להגיע.</blockquote>
+          <blockquote>עבודה פיקס. הרכב משתנה לגמרי - שווה להגיע.</blockquote>
           <figcaption>Dmytry Kulyk</figcaption>
         </figure>
       </div>
@@ -286,7 +332,7 @@
 
         <div class="place__map">
           <iframe
-            title="מפה — העמל 1, אשדוד"
+            title="מפה - העמל 1, אשדוד"
             src="https://maps.google.com/maps?q=31.8143295,34.6696222&z=16&hl=iw&output=embed"
             loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
@@ -298,7 +344,7 @@
   <section class="cta" id="contact">
     <div class="shell cta__in">
       <h2 class="cta__h"><span class="ln"><i>נשמע טוב?</i></span></h2>
-      <p>שלחו הודעה עם דגם הרכב ומה בא לכם לעשות — נחזור אליכם עם מחיר וזמן עבודה.</p>
+      <p>שלחו הודעה עם דגם הרכב ומה בא לכם לעשות - נחזור אליכם עם מחיר וזמן עבודה.</p>
       <a class="btn btn--fill btn--lg magnetic" href="https://wa.me/972543060327?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2z" fill="currentColor"/></svg>
         דברו איתנו בוואטסאפ
@@ -348,6 +394,6 @@
   קבלו הצעת מחיר
 </a>
 
-<script src="assets/app.js?v=2"></script>
+<script src="assets/app.js?v=6"></script>
 </body>
 </html>
